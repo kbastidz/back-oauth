@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\api-otc-core-person.props" />
+</Project>

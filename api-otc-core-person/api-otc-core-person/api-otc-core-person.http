@@ -1,0 +1,6 @@
+@api_otc_core_person_HostAddress = http://localhost:5185
+
+GET {{api_otc_core_person_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

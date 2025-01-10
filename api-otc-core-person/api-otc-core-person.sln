@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api-otc-core-person", "api-otc-core-person\api-otc-core-person.csproj", "{071A52C4-557C-422E-BA10-5502F381E6BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "core", "core\core.csproj", "{5630E183-811B-4042-B477-834465515BA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "db", "db\db.csproj", "{A708775C-D85C-4A5E-B6EA-66291D9FBB04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{071A52C4-557C-422E-BA10-5502F381E6BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{071A52C4-557C-422E-BA10-5502F381E6BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{071A52C4-557C-422E-BA10-5502F381E6BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{071A52C4-557C-422E-BA10-5502F381E6BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5630E183-811B-4042-B477-834465515BA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5630E183-811B-4042-B477-834465515BA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5630E183-811B-4042-B477-834465515BA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5630E183-811B-4042-B477-834465515BA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A708775C-D85C-4A5E-B6EA-66291D9FBB04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A708775C-D85C-4A5E-B6EA-66291D9FBB04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A708775C-D85C-4A5E-B6EA-66291D9FBB04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A708775C-D85C-4A5E-B6EA-66291D9FBB04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E875352E-1B23-46A1-A75D-3531537C3152}
+	EndGlobalSection
+EndGlobal

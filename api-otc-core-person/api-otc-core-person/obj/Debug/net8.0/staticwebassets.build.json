@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "0aUtpeJXprNnKaNVX0Dk4EXTfjUZhxz5qUBUwF0nJlE=",
+  "Source": "api-otc-core-person",
+  "BasePath": "_content/api-otc-core-person",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
