@@ -26,15 +26,21 @@ namespace api_gestion_escolar.Controllers
 
         #region Back-Login
         [HttpPost("generaToken")]
-        public string GeneraToken(string user)
+        public RsTrxService GeneraToken(Login request)
         {
-            return _config.GenerateToken(user);
+            var tokenResult = _config.GenerateToken(request.User);
+            RsTrxService response = new RsTrxService();
+            response.Token = tokenResult;
+            return response;
         }
 
         [HttpPost("refreshToken")]
-        public string RefreshToken(string token)
+        public RsTrxService RefreshToken(string token)
         {
-           return _config.RefreshToken(token);
+            var tokenResult = _config.RefreshToken(token);
+            RsTrxService response = new RsTrxService();
+            response.Token = tokenResult;
+            return response;
         }
 
         [HttpPost("validateLogin")]

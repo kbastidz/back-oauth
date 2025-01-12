@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using db.Response;
 using db.Models;
 
+
 namespace Core.service
 {
     public class AuthService : IAuthService
@@ -25,7 +26,6 @@ namespace Core.service
             {
                 var usuario = await _context.Usuarios.Include(u => u.IdPersonaNavigation).FirstOrDefaultAsync(u =>
                     u.Username == model.User && u.Estado == _active && u.Intento <= 3);
-
                 if (usuario == null)
                 {
                     return responseUnauthorized();
@@ -120,7 +120,8 @@ namespace Core.service
 
                 var modelU = _mapper.Map<Usuario>(model);
                 modelU.IdPersona = modelP.Id;
-                
+                modelU.Intento = 0;
+
                 //Ref. Definir el rol cuando la ced. exista en esta tabla.
                 /*var isDocent = await _context.Docentes.FirstOrDefaultAsync(u => u.Cedula == modelP.Cedula);
                 modelU.Rol = (isDocent != null) ? "DOCENTE" : "ESTUDIANTE";*/
@@ -149,6 +150,7 @@ namespace Core.service
                 await _context.SaveChangesAsync();
 
                 var modelU = _mapper.Map<Usuario>(model);
+                modelU.Intento = 0;
                 _context.Usuarios.Update(modelU);
                 await _context.SaveChangesAsync();
 

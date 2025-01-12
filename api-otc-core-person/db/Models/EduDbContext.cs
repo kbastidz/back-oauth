@@ -69,10 +69,6 @@ public partial class EduDbContext : DbContext
 
             entity.ToTable("Usuario");
 
-            entity.HasIndex(e => e.Contrasenia, "UQ__Usuario__65F8EF517C87734F").IsUnique();
-
-            entity.HasIndex(e => e.Username, "UQ__Usuario__F3DBC572749E8809").IsUnique();
-
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Contrasenia)
                 .HasMaxLength(255)

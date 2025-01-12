@@ -34,14 +34,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "user",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "request",
+        "Type": "db.dominio.Login",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.String",
+        "Type": "db.Response.RsTrxService",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -67,7 +67,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.String",
+        "Type": "db.Response.RsTrxService",
         "MediaTypes": [
           "text/plain",
           "application/json",
